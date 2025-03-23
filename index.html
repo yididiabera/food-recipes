@@ -1,78 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Recipes</title>
-    <link rel="stylesheet" href="src/style.css">
-</head>
-<body>
-    <div class="bg-red-500 text-white p-4">If this is red, Tailwind is working!</div>
-
-    <div> <!--content wrapper-->
-        <div> <!--navigation bar-->
-            <nav>
-                <div>
-                    <h1> 
-                        <a href="/">Torpa Food</a>
-                    </h1>
-                </div>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>About</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>Contacts</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div> <!-- end nav -->
-
-        <main>
-            <div>
-                <a href="#">Log in</a>
-                <a href="#">Sign up</a>
-            </div>
-
-            <h2>Recipes</h2>
-            <h2>For Torpas</h2>
-
-            <div> <!-- to wrap all cards -->
-                <h4>Latest recipes</h4>
-                <div>
-                    <!--- cards go here -->
-                    <div>
-                        <img src="images/pasta.jpg" alt="pasta with shrimp" class="w-64 h-40 object-cover rounded-lg" >
-                        <div> <!-- to surround the text content-->
-                            <span> Pasta</span>
-                            <span>Recipe by Christi</span>
-                        </div>
-                    </div>
-                </div>
-
-                <h4>Most popular recipes</h4>
-                <div>
-                    <!-- cards go here -->
-                </div>
-
-                <div> <!-- Load more button-->
-                    <div>Load more...</div>
-                </div>
-
-            </div>
-        </main>
-
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="bg-blue-500 text-white p-4">
+      If this is red, Tailwind is working!
     </div>
 
-    <script type="module" src="/src/main.js"></script>
-</body>
+    <div>
+      <!--content wrapper-->
+      <div>
+        <!--navigation bar-->
+        <nav>
+          <div>
+            <h1>
+              <a href="/">Torpa Food</a>
+            </h1>
+          </div>
+          <ul>
+            <li>
+              <a href="#">
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Contacts</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- end nav -->
+
+      <main>
+        <div>
+          <a href="#">Log in</a>
+          <a href="#">Sign up</a>
+        </div>
+
+        <h2>Recipes</h2>
+        <h2>For Torpas</h2>
+
+        <div>
+          <!-- to wrap all cards -->
+          <h4>Latest recipes</h4>
+          <div>
+            <!--- cards go here -->
+            <div>
+              <img
+                src="images/pasta.jpg"
+                alt="pasta with shrimp"
+                class="w-64 h-40 object-cover rounded-lg"
+              />
+              <div>
+                <!-- to surround the text content-->
+                <span> Pasta</span>
+                <span>Recipe by Christi</span>
+              </div>
+            </div>
+          </div>
+
+          <h4>Most popular recipes</h4>
+          <div>
+            <!-- cards go here -->
+          </div>
+
+          <div>
+            <!-- Load more button-->
+            <div>Load more...</div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
