@@ -7,23 +7,19 @@
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body>
-    <div class="bg-blue-500 text-white p-4">
-      If this is red, Tailwind is working!
-    </div>
-
+  <body class="text-gray-600">
     <div>
       <!--content wrapper-->
       <div>
         <!--navigation bar-->
         <nav>
           <div>
-            <h1>
+            <h1 class="uppercase font-bold text-l p-4 border-b border-gray-200">
               <a href="/">Torpa Food</a>
             </h1>
           </div>
           <ul>
-            <li>
+            <li class="text-gray-700 font-bold">
               <a href="#">
                 <span>Home</span>
               </a>
@@ -43,19 +39,21 @@
       </div>
       <!-- end nav -->
 
-      <main>
+      <main class="px-16 py-6">
         <div>
           <a href="#">Log in</a>
           <a href="#">Sign up</a>
         </div>
 
-        <h2>Recipes</h2>
-        <h2>For Torpas</h2>
+        <h2 class="text-5xl">Recipes</h2>
+        <h2 class="text-2xl">For Torpas</h2>
 
         <div>
           <!-- to wrap all cards -->
-          <h4>Latest recipes</h4>
-          <div>
+          <h4 class="font-bold mt-12 pb-2 border-b border-gray-300">
+            Latest recipes
+          </h4>
+          <div class="mt-8">
             <!--- cards go here -->
             <div>
               <img
@@ -66,12 +64,14 @@
               <div>
                 <!-- to surround the text content-->
                 <span> Pasta</span>
-                <span>Recipe by Christi</span>
+                <span class="mt-2">Recipe by Christi</span>
               </div>
             </div>
           </div>
 
-          <h4>Most popular recipes</h4>
+          <h4 class="font-bold mt-12 pb-2 border-b border-gray-300">
+            Most popular recipes
+          </h4>
           <div>
             <!-- cards go here -->
           </div>
