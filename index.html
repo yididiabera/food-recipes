@@ -7,15 +7,20 @@
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body class="text-gray-600 font-sexy bg-gray-100">
+  <body
+    class="text-gray-600 font-sexy bg-gray-100 dark:bg-gray-900 dark:text-gray-200"
+  >
     <div class="grid md:grid-cols-8">
-      <!--content wrapper-->
-      <div class="md:col-span-1 shadow-lg">
-        <!--navigation bar-->
+      <!-- Sidebar -->
+      <div class="md:col-span-1 shadow-lg dark:shadow-gray-700">
         <nav class="text-right w-full flex flex-col items-end p-4">
           <div class="flex justify-between items-center">
-            <h1 class="uppercase font-bold text-l p-4 border-b border-gray-200">
-              <a class="hover:text-gray-800" href="/">Torpa Food</a>
+            <h1
+              class="uppercase font-bold text-l p-4 border-b border-gray-200 dark:border-gray-600"
+            >
+              <a class="hover:text-gray-800 dark:hover:text-gray-400" href="/"
+                >Torpa Food</a
+              >
             </h1>
             <div class="cursor-pointer px-4 md:hidden" id="burger">
               <svg
@@ -34,71 +39,27 @@
               </svg>
             </div>
           </div>
+
           <ul class="hidden md:block" id="menu">
-            <li class="py-1 text-gray-700 font-bold border-r-4 border-red-400">
-              <a class="px-4 flex justify-end" href="#">
-                <span>Home</span>
-                <svg
-                  class="w-4 ml-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-                  />
-                </svg>
-              </a>
+            <li
+              class="py-1 text-gray-700 font-bold border-r-4 border-red-400 dark:text-gray-200"
+            >
+              <a class="px-4 flex justify-end" href="#">Home</a>
             </li>
             <li>
-              <a class="py-1 px-4 flex justify-end" href="#">
-                <span>About</span>
-                <svg
-                  class="w-4 m-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"
-                  />
-                </svg>
-              </a>
+              <a class="py-1 px-4 flex justify-end dark:text-gray-200" href="#"
+                >About</a
+              >
             </li>
             <li>
-              <a class="py-1 px-4 flex justify-end" href="#">
-                <span>Contacts</span>
-                <svg
-                  class="w-4 m-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z"
-                  />
-                </svg>
-              </a>
+              <a class="py-1 px-4 flex justify-end dark:text-gray-200" href="#"
+                >Contacts</a
+              >
             </li>
           </ul>
         </nav>
       </div>
-      <!-- end nav -->
+      <!-- End Sidebar -->
 
       <main class="px-16 py-6 md:col-span-7">
         <div class="flex justify-center md:justify-end">
@@ -112,138 +73,75 @@
             class="btn text-red-500 border-red-500 hover:text-white hover:bg-red-500 md:border-2 ml-2 transition ease-in-out duration-500"
             >Sign up</a
           >
+          <!-- Dark Mode Toggle -->
+          <button
+            id="dark-mode-toggle"
+            class="btn ml-2 border-dark border-2 dark:border-white"
+          >
+            🌙 Dark Mode
+          </button>
         </div>
 
-        <h2 class="text-5xl">Recipes</h2>
-        <h2 class="text-2xl">For Torpas</h2>
+        <h2 class="text-5xl dark:text-white">Recipes</h2>
+        <h2 class="text-2xl dark:text-gray-300">For Torpas</h2>
 
-        <div>
-          <!-- to wrap all cards -->
-          <h4 class="font-bold mt-12 pb-2 border-b border-gray-300">
-            Latest recipes
-          </h4>
-          <div class="grid lg:grid-cols-3 gap-10 mt-8">
-            <!--- cards go here -->
-            <div class="card">
-              <img
-                src="images/pasta.jpg"
-                alt="pasta with shrimp"
-                class="w-full h-32 object-cover rounded-lg shadow-2xl mt-2 ml-3"
-              />
-              <div class="m-4">
-                <!-- to surround the text content-->
-                <span class="font-bold"> Pasta</span>
-                <span class="block text-gray-500 text-sm"
-                  >Recipe by Christi</span
-                >
-              </div>
-              <div>
-                <span class="badge">
-                  <svg
-                    class="w-4 inline-block"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="{1.5}"
-                    stroke="currentColor"
-                    className="size-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                    />
-                  </svg>
-                  25 mins</span
-                >
-              </div>
-            </div>
-
-            <div class="card">
-              <img
-                src="images/wet.jpg"
-                alt="wet"
-                class="w-full h-32 object-cover rounded-lg shadow-2xl mt-2 ml-3"
-              />
-              <div class="m-4">
-                <!-- to surround the text content-->
-                <span class="font-bold"> Tibs</span>
-                <span class="block text-gray-500 text-sm">Recipe by Mekdi</span>
-              </div>
-              <div>
-                <span class="badge">
-                  <svg
-                    class="w-4 inline-block"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="{1.5}"
-                    stroke="currentColor"
-                    className="size-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                    />
-                  </svg>
-                  25 mins</span
-                >
-              </div>
-            </div>
-
-            <div class="card">
-              <img
-                src="images/burger.jpg"
-                alt="burger"
-                class="w-full h-32 object-cover rounded-lg shadow-2xl mt-2 ml-3"
-              />
-              <div class="m-4">
-                <!-- to surround the text content-->
-                <span class="font-bold"> Burger</span>
-                <span class="block text-gray-500 text-sm">Recipe by Beta</span>
-              </div>
-              <div>
-                <span class="badge">
-                  <svg
-                    class="w-4 inline-block"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="{1.5}"
-                    stroke="currentColor"
-                    className="size-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                    />
-                  </svg>
-                  25 mins</span
-                >
-              </div>
+        <h4
+          class="font-bold mt-12 pb-2 border-b border-gray-300 dark:border-gray-600"
+        >
+          Latest recipes
+        </h4>
+        <div class="grid lg:grid-cols-3 gap-10 mt-8">
+          <div class="card dark:bg-gray-800 dark:text-gray-200">
+            <img
+              src="images/pasta.jpg"
+              alt="pasta with shrimp"
+              class="w-full h-32 object-cover rounded-lg shadow-2xl mt-2 ml-3"
+            />
+            <div class="m-4">
+              <span class="font-bold">Pasta</span>
+              <span class="block text-gray-500 text-sm dark:text-gray-400"
+                >Recipe by Christi</span
+              >
             </div>
           </div>
-
-          <h4 class="font-bold mt-12 pb-2 border-b border-gray-300">
-            Most popular recipes
-          </h4>
-          <div>
-            <!-- cards go here -->
-          </div>
-
-          <div class="flex justify-center">
-            <!-- Load more button-->
-            <div
-              class="btn bg-slate-200 mt-3 transform hover:-scale-x-125 transition ease-in-out hover:bg-opacity-40 duration-300"
-            >
-              Load more...
+          <div class="card dark:bg-gray-800 dark:text-gray-200">
+            <img
+              src="images/wet.jpg"
+              alt="wet"
+              class="w-full h-32 object-cover rounded-lg shadow-2xl mt-2 ml-3"
+            />
+            <div class="m-4">
+              <span class="font-bold">Tibs</span>
+              <span class="block text-gray-500 text-sm dark:text-gray-400"
+                >Recipe by Mekdi</span
+              >
             </div>
+          </div>
+          <div class="card dark:bg-gray-800 dark:text-gray-200">
+            <img
+              src="images/burger.jpg"
+              alt="burger"
+              class="w-full h-32 object-cover rounded-lg shadow-2xl mt-2 ml-3"
+            />
+            <div class="m-4">
+              <span class="font-bold">Burger</span>
+              <span class="block text-gray-500 text-sm dark:text-gray-400"
+                >Recipe by Beta</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <div
+            class="btn bg-slate-200 dark:bg-gray-700 dark:text-gray-200 mt-3 transform hover:-scale-x-125 transition ease-in-out hover:bg-opacity-40 duration-300"
+          >
+            Load more...
           </div>
         </div>
       </main>
     </div>
+
     <script type="module" src="./src/index.js"></script>
   </body>
 </html>
