@@ -1,4 +1,4 @@
-# 🍽️ Torpa Food Recipes  
+# 🍽️ Food Recipes  
 
 A **responsive food recipe website** built with **HTML, Tailwind CSS, and JavaScript**. It includes a **dark mode toggle**, a mobile-friendly navigation menu, and stylish recipe cards.  
 
